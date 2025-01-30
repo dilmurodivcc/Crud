@@ -1,16 +1,3 @@
 {
-  "users": [
-    {
-      "name": "w",
-      "email": "WF@ega.fj",
-      "age": "2",
-      "id": 1
-    },
-    {
-      "name": "Abdulloh",
-      "email": "zufarovamohira32@gmail.com",
-      "age": "4",
-      "id": 2
-    }
-  ]
+  "users": []
 }
