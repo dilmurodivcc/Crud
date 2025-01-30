@@ -275,7 +275,7 @@ main p {
 .loader {
   width: 40px;
   height: 40px;
-  --c:no-repeat linear-gradient(#7e40d0 92%,#000 0 0);
+  --c: no-repeat linear-gradient(#7e40d0 92%, #000 0 0);
   background: var(--c), var(--c), var(--c), var(--c);
   position: absolute;
   top: 50%;
@@ -301,5 +301,55 @@ main p {
   }
   100% {
     background-position: 100% 0, 100% 100%, 0 100%, 0 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+  h1 span {
+    font-size: 50px !important;
+  }
+  form {
+    width: 40% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    overflow: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  main {
+    position: static;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: blur(200px);
+            backdrop-filter: blur(200px);
+    max-width: 100vw;
+    width: 80vw;
+    margin: 40px 0;
+    border-radius: 30px;
+    border: 1px solid var(--border-color);
+    box-shadow: 1px 1px 10px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 30px;
+    transition: all 0.3s ease;
+  }
+  h1 {
+    display: none;
+  }
+  form {
+    margin-top: 40px !important;
+    width: 80vw !important;
+  }
+  input {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=main.css.map */
